@@ -86,11 +86,3 @@ describe("findSimilarities()", ()=>{
         expect(actualOutput).toBe(expectedOutput)
     })
 })
-
-xdescribe("turn a text file's 2 list of numbers into an array", ()=>{
-    test("test file is an array of numbers", ()=>{
-        const actualOutput= txtToArrays("text/01-testFile.txt")
-        const expectedOutput= [14184, 89299, 44142, 91129, 85560, 65569, 31443, 46882, 86649, 86681]
-        expect(actualOutput).toEqual(expectedOutput)
-    })
-})

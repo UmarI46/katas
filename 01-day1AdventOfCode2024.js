@@ -32,7 +32,7 @@ function findDistance(arr1, arr2){
         }
     }
 
-    console.log(sum)
+    //console.log(sum)
     return sum
 }
 
@@ -51,7 +51,7 @@ function findSimilarities(arr1, arr2){
         duplicates= 0
     }
 
-    console.log(similarityScore)
+    //console.log(similarityScore)
     return similarityScore
 }
 
