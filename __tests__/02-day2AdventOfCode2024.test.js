@@ -1,4 +1,4 @@
-const {safetyCheck}= require("../02-day2AdventOfCode2024")
+const {safetyCheck, txtToNestedArray}= require("../02-day2AdventOfCode2024")
 
 describe("safetyCheck()", ()=>{
     test("if given an empty nested array then return an error message", ()=>{
@@ -44,6 +44,14 @@ describe("safetyCheck()", ()=>{
     test("does not add to the numberOfSafe if there are 2 same numbers (DECREASE)", ()=>{
         const actualOutput= safetyCheck([[4,3,2,1],[13,11,8,3],[13,11,8,6,6], [11,9,8,6,3]])
         const expectedOutput= 2
+        expect(actualOutput).toBe(expectedOutput)
+    })
+})
+
+xdescribe("txtToNestedArray", ()=>{
+    test("returns a nested array from a text file", ()=>{
+        const actualOutput= txtToNestedArray("text/02-testData.txt")
+        const expectedOutput= [[58,59,62,63,64,63], [71,72,74,76,78,80,82,82], [26,29,32,34,35,39], [9,11,14,17,19,20,21,26]]
         expect(actualOutput).toBe(expectedOutput)
     })
 })
